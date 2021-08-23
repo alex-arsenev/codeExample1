@@ -1,0 +1,79 @@
+.testTasks {
+    margin-left: 20px;
+}
+.testTasks__header {
+    color: #434553;
+    font-weight: 600;
+    font-size: 26px;
+    margin-top: 15px;
+}
+
+.testTasks__circles {
+    display: flex;
+    margin-top: 20px;
+}
+.testTasks__circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    font-size: 15px;
+    color: #FFFFFF;
+    position: relative;
+    margin-left: 12px;
+    text-align: center;
+    padding-top: 2px;
+}
+.testTasks__circle::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px dashed #BEC4E3;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+}
+
+.testTasks__circle:nth-child(1){
+    margin-left: 0;
+}
+.testTasks__circle:nth-last-child(1):after{
+    display: none;
+}
+.circle::after {
+    display: inline-block;
+    content: "";
+    border-top: 1px dashed #BEC4E3;
+    width: 10px;
+    position: absolute;
+    top: 10px;
+    left: 24px;
+}
+
+.testTasks__circleRight {
+    border: 1px solid #39D26D;
+    background: #39D26D;
+}
+
+.testTasks__circleWrong {
+    border: 1px solid #E36767;
+    background: #E36767;
+}
+.testTasks__circleInProcess {
+    border: 1px solid #1D66FF;
+    background: #1D66FF;
+}
+.testTasks__circlenotAnswered {
+    border: 1px solid #989ECB;
+    background: #989ECB;
+}
+.testTasks__result {
+    margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .testTasks__header {
+        width: 300px;
+    }
+
+}
